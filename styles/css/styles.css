@@ -2,28 +2,30 @@
   background-color: rgba(0, 255, 255, 0.2);
 }
 
-header nav {
+nav {
   text-align: right;
   font-family: "Roboto", Arial, sans-serif;
 }
-header nav .navLink {
+
+.navLink {
   vertical-align: middle;
   display: inline-block;
   padding: 10px;
   text-decoration: none;
   color: black;
 }
-header nav .navLink .imgLink {
+.navLink .imgLink {
   width: 30px;
   height: 30px;
 }
-header nav .navLink .avatar {
+.navLink .avatar {
   border-radius: 50%;
 }
-header nav .burger {
+
+.burger {
   position: relative;
 }
-header nav .burger .input {
+.burger .input {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -33,10 +35,11 @@ header nav .burger .input {
   padding: 0;
   border: 0;
 }
-header nav .burger #burgerCheckbox:checked ~ .main {
+.burger #burgerCheckbox:checked ~ .main {
   display: flex;
 }
-header nav .navLink:focus {
+
+.navLink:focus {
   outline: 2px solid blue;
 }
 
@@ -66,39 +69,48 @@ header nav .navLink:focus {
     right: -100px;
   }
 }
-.popupContainer .containerForItem {
+
+.containerForItem {
+  list-style-type: none;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0;
 }
-.popupContainer .visibleBlock {
+
+.visibleBlock {
   display: flex;
 }
-.popupContainer .itemBlock {
+
+.itemBlock {
   padding: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.popupContainer .itemBlock .itemPopup {
+
+.itemPopup {
   width: 70px;
   padding: 15px;
   font-family: "Roboto", Arial, sans-serif;
   text-decoration: none;
   color: black;
 }
-.popupContainer .itemBlock .itemPopup .imgBlock {
+
+.imgBlock {
   width: 70px;
   height: 65px;
 }
-.popupContainer .itemBlock .itemPopup .imgBlock img {
+.imgBlock img {
   max-width: 50px;
   max-height: 50px;
 }
-.popupContainer .itemBlock .itemName {
+
+.itemName {
   font-family: "Roboto", Arial, sans-serif;
 }
-.popupContainer .itemPopup:focus {
+
+.itemPopup:focus {
   outline: 2px solid blue;
 }
 
@@ -124,7 +136,7 @@ header nav .navLink:focus {
   height: 0;
   border-style: solid;
   border-width: 0 15px 15px 15px;
-  border-color: transparent transparent #ccffff transparent;
+  border-color: transparent transparent rgb(204, 255, 255) transparent;
   position: absolute;
   left: 249px;
   top: -15px;
